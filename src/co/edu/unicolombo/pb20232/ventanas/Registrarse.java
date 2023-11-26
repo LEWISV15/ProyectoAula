@@ -22,6 +22,7 @@ public class Registrarse extends javax.swing.JFrame {
          this.login = app;
         
     }
+    //------------------------------------------------------------------------------------------------------------------------------------
      private void registrarNuevoUsuario() {
         String nuevoUsuario = nombre.getText();
         String nuevaContraseña = new String(password.getPassword());

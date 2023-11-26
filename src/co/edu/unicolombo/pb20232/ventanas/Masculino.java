@@ -165,6 +165,9 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        recargar = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        valor = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -387,6 +390,21 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
             }
         });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(595, 480, 110, 40));
+
+        recargar.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
+        recargar.setText("Recargar");
+        recargar.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 0, 0), new java.awt.Color(255, 153, 0)));
+        recargar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                recargarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(recargar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 343, 100, 40));
+
+        jLabel13.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
+        jLabel13.setText("Ingrese el valor a recargar");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
+        jPanel1.add(valor, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, 200, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -638,6 +656,16 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
             modelo.removeRow(i);
         }
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void recargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recargarActionPerformed
+        // TODO add your handling code here:
+        if (valor.getText().isEmpty()){
+          JOptionPane.showMessageDialog(rootPane, "Por favor llene el valor a recargar");
+      } else{
+          int entero = Integer.parseInt(valor.getText());
+          sumarValorDeseado(entero);
+      }
+    }//GEN-LAST:event_recargarActionPerformed
 private void sumarPartidoJugado() {
     
     
@@ -968,6 +996,7 @@ private void sumarPartidoJugado2() {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -981,6 +1010,7 @@ private void sumarPartidoJugado2() {
     private javax.swing.JTextField nombredelequipo;
     private javax.swing.JButton premio;
     private javax.swing.JTextField propietario;
+    private javax.swing.JButton recargar;
     private javax.swing.JLabel saldo;
     private javax.swing.JTextField sede;
     private javax.swing.JTable tabla;
@@ -988,5 +1018,6 @@ private void sumarPartidoJugado2() {
     private javax.swing.JTextField txtcolumna;
     private javax.swing.JTextField txtdatonuevo;
     private javax.swing.JTextField txtfila;
+    private javax.swing.JTextField valor;
     // End of variables declaration//GEN-END:variables
 }
