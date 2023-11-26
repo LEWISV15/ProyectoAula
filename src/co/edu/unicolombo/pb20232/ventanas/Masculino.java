@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 public class Masculino extends javax.swing.JFrame {
     int juego = 0;
-    int saldoinicial = 2000;
+    int saldoinicial = 1000;
    Random random = new Random();
    Saldos operar = new Saldos();
    
@@ -162,12 +162,12 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
         saldo = new javax.swing.JLabel();
         premio = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        recargar = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         valor = new javax.swing.JTextField();
+        recargar = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -179,18 +179,18 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
                 nombredelequipoActionPerformed(evt);
             }
         });
-        jPanel1.add(nombredelequipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 220, 30));
+        jPanel1.add(nombredelequipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 224, 20));
 
-        Reiniciar.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
-        Reiniciar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/Imagenes/reiniciar.png"))); // NOI18N
+        Reiniciar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Reiniciar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/Imagenes/basura (1).png"))); // NOI18N
         Reiniciar.setText("Reiniciar");
-        Reiniciar.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 51, 51), new java.awt.Color(255, 102, 0)));
+        Reiniciar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(0, 153, 255), null, null));
         Reiniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ReiniciarActionPerformed(evt);
             }
         });
-        jPanel1.add(Reiniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 480, 100, 40));
+        jPanel1.add(Reiniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 470, 118, 40));
 
         sede.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -206,10 +206,10 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
         });
         jPanel1.add(propietario, new org.netbeans.lib.awtextra.AbsoluteConstraints(152, 259, 220, -1));
 
-        Jugar.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
+        Jugar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         Jugar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/Imagenes/jugador-de-voleibol (1).png"))); // NOI18N
         Jugar.setText("Jugar");
-        Jugar.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 51, 51), new java.awt.Color(255, 102, 0)));
+        Jugar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(0, 153, 255), null, null));
         Jugar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JugarMouseClicked(evt);
@@ -220,19 +220,19 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
                 JugarActionPerformed(evt);
             }
         });
-        jPanel1.add(Jugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 480, 130, 40));
+        jPanel1.add(Jugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 470, 112, 40));
 
         tipodejuego.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Masculino" }));
         jPanel1.add(tipodejuego, new org.netbeans.lib.awtextra.AbsoluteConstraints(158, 214, 220, -1));
 
-        jLabel9.setFont(new java.awt.Font("Book Antiqua", 1, 16)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setText("Ingrese contraseña de administrador: ");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 300, -1, 22));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1042, 294, -1, 22));
 
-        jButton2.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/Imagenes/editar (2).png"))); // NOI18N
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/Imagenes/editar (1).png"))); // NOI18N
         jButton2.setText("Modificar");
-        jButton2.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 51, 51), new java.awt.Color(255, 102, 0)));
+        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(0, 153, 255), null, null));
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);
@@ -243,34 +243,34 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1114, 390, 130, 40));
-        jPanel1.add(Contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 340, 316, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1036, 374, 134, 46));
+        jPanel1.add(Contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(1042, 334, 316, -1));
 
-        jLabel6.setFont(new java.awt.Font("Book Antiqua", 1, 16)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setText("Ingrese La Fila :");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 90, -1, 29));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1042, 94, -1, 29));
 
-        jLabel10.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(80, 178, 211));
         jLabel10.setText("Modificar");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 50, -1, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1036, 51, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Book Antiqua", 1, 16)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setText("Ingrese La Columna :");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 150, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1042, 154, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Book Antiqua", 1, 16)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel8.setText("Ingrese el dato a reemplazar:");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 210, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1042, 208, -1, -1));
 
         txtfila.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtfilaActionPerformed(evt);
             }
         });
-        jPanel1.add(txtfila, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 90, 180, -1));
+        jPanel1.add(txtfila, new org.netbeans.lib.awtextra.AbsoluteConstraints(1209, 98, 190, -1));
 
-        tabla.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 0), 1, true));
+        tabla.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 255), 1, true));
         tabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -288,36 +288,36 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 29, 646, -1));
 
-        jLabel1.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(61, 150, 195));
         jLabel1.setText("Registrar equipo");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(94, 73, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Book Antiqua", 1, 16)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Nombre del equipo :");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 116, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Book Antiqua", 1, 16)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText("Sede:");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 166, 136, -1));
 
-        jLabel4.setFont(new java.awt.Font("Book Antiqua", 1, 16)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Tipo de juego :");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 214, 140, -1));
 
-        jLabel5.setFont(new java.awt.Font("Book Antiqua", 1, 16)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel5.setText("Propietario :");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 259, 140, -1));
-        jPanel1.add(txtcolumna, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 150, 180, -1));
+        jPanel1.add(txtcolumna, new org.netbeans.lib.awtextra.AbsoluteConstraints(1246, 154, 172, -1));
 
-        Registrar.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
-        Registrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/Imagenes/guardar-como.png"))); // NOI18N
+        Registrar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Registrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/Imagenes/verificar (3).png"))); // NOI18N
         Registrar.setText("Registrar");
-        Registrar.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 51, 0), new java.awt.Color(255, 102, 0)));
+        Registrar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(0, 153, 255), null, null));
         Registrar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 RegistrarMouseClicked(evt);
@@ -328,8 +328,8 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
                 RegistrarActionPerformed(evt);
             }
         });
-        jPanel1.add(Registrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 341, 120, 40));
-        jPanel1.add(txtdatonuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 250, 316, -1));
+        jPanel1.add(Registrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 117, 49));
+        jPanel1.add(txtdatonuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1042, 246, 316, -1));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 204, 204));
@@ -339,10 +339,7 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
         saldo.setText("0.00");
         jPanel1.add(saldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(94, 21, 30, -1));
 
-        premio.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
-        premio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/bolsa-de-dinero.png"))); // NOI18N
         premio.setText("Reclamar premio");
-        premio.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 51, 51), new java.awt.Color(255, 102, 0)));
         premio.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 premioMouseClicked(evt);
@@ -353,13 +350,48 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
                 premioActionPerformed(evt);
             }
         });
-        jPanel1.add(premio, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 480, 180, 40));
+        jPanel1.add(premio, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 470, -1, 40));
 
         jLabel12.setText("$");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 21, -1, -1));
 
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton3.setText("Eliminar");
+        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 470, 100, 40));
+
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton4.setText("Eliminar todo");
+        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 470, 110, 40));
+
+        jLabel13.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
+        jLabel13.setText("Ingrese el valor a recargar");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
+        jPanel1.add(valor, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, 200, -1));
+
+        recargar.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
+        recargar.setText("Recargar");
+        recargar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        recargar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                recargarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(recargar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, 100, 40));
+
         jButton1.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/volver (1).png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/atras (1).png"))); // NOI18N
         jButton1.setText("Atras");
         jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 51, 51), new java.awt.Color(255, 102, 0)));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -367,56 +399,23 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 450, -1, -1));
-
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/Imagenes/basura (2) (1).png"))); // NOI18N
-        jButton3.setText("Eliminar");
-        jButton3.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 51, 51), new java.awt.Color(255, 102, 0)));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 480, 100, 40));
-
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/Imagenes/eliminar (2).png"))); // NOI18N
-        jButton4.setText("Eliminar todo");
-        jButton4.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 0, 0), new java.awt.Color(255, 102, 0)));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(595, 480, 110, 40));
-
-        recargar.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
-        recargar.setText("Recargar");
-        recargar.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 0, 0), new java.awt.Color(255, 153, 0)));
-        recargar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                recargarActionPerformed(evt);
-            }
-        });
-        jPanel1.add(recargar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 343, 100, 40));
-
-        jLabel13.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
-        jLabel13.setText("Ingrese el valor a recargar");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
-        jPanel1.add(valor, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, 200, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1380, 470, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1494, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 635, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(17, 17, 17))
         );
 
         pack();
@@ -425,72 +424,6 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
     private void nombredelequipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombredelequipoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_nombredelequipoActionPerformed
-
-    private void ReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReiniciarActionPerformed
-        int filas = modelo.getRowCount();
-        boolean equipoGanador = false;  // Variable para rastrear si ya hay un equipo ganador
-        int filaEquipoGanador = -1;  // Almacena la fila del equipo ganador, si lo hay
-
-// Bucle para verificar si hay un equipo ganador
-        for (int i = 0; i < filas; i++) {
-            int puntos = (int) modelo.getValueAt(i, 7);
-
-            if (puntos >= 13) {
-                equipoGanador = true;
-                filaEquipoGanador = i;
-                // No rompemos el bucle para verificar todas las filas y reiniciar valores en todas
-            }
-        }
-
-// Verificar si hay un equipo ganador
-        if (equipoGanador) {
-            // Reiniciar valores de las columnas a 0 en todas las filas
-            int columna_a_seleccionada_4 = 4;
-            int columna_a_seleccionada_5 = 5;
-            int columna_a_seleccionada_6 = 6;
-            int columna_a_seleccionada_7 = 7;
-
-            for (int i = 0; i < filas; i++) {
-                modelo.setValueAt(0, i, columna_a_seleccionada_4);
-                modelo.setValueAt(0, i, columna_a_seleccionada_5);
-                modelo.setValueAt(0, i, columna_a_seleccionada_6);
-                modelo.setValueAt(0, i, columna_a_seleccionada_7);
-            }
-
-            // Eliminar la fila número 5
-            if (filaEquipoGanador < 5) {
-                modelo.removeRow(5);
-                if (juego == 1) {
-                    juego = 0;
-                    Registrar.setEnabled(true);
-                    propietario.setText("");
-                    nombredelequipo.setText("");
-                    sede.setText("");
-                    
-                }
-            } else {
-                modelo.removeRow(filaEquipoGanador);
-            }
-
-            JOptionPane.showMessageDialog(this, "¡Hemos encontrado un ganador!");
-        } else {
-            // Verificar otras condiciones después de revisar todas las filas
-
-            if (nombredelequipo.getText().isEmpty() || sede.getText().isEmpty() || propietario.getText().isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Debe registrarse primero");
-            } else {
-                JOptionPane.showMessageDialog(this, "Ningún equipo ha ganado aún");
-
-                // Puedes agregar más lógica aquí si es necesario
-            }
-        }
-             
-        
-        
-           
-            
-             
-    }//GEN-LAST:event_ReiniciarActionPerformed
 
     private void sedeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sedeActionPerformed
         // TODO add your handling code here:
@@ -564,7 +497,7 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
     private void RegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarActionPerformed
         if(saldoinicial==0){
              Registrar.setEnabled(true);
-             JOptionPane.showMessageDialog(rootPane, "Ya se ha acabado su saldo, muchas gracias por jugar");
+             JOptionPane.showMessageDialog(rootPane, "Si gusta en participar, por favor Recargue");
             
         
        } else{
@@ -632,12 +565,66 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
         // TODO add your handling code here:
     }//GEN-LAST:event_premioActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        Ligas atrs = new Ligas();
-        atrs.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void ReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReiniciarActionPerformed
+        int filas = modelo.getRowCount();
+        boolean equipoGanador = false;  // Variable para rastrear si ya hay un equipo ganador
+        int filaEquipoGanador = -1;  // Almacena la fila del equipo ganador, si lo hay
+
+        // Bucle para verificar si hay un equipo ganador
+        for (int i = 0; i < filas; i++) {
+            int puntos = (int) modelo.getValueAt(i, 7);
+
+            if (puntos >= 13) {
+                equipoGanador = true;
+                filaEquipoGanador = i;
+                // No rompemos el bucle para verificar todas las filas y reiniciar valores en todas
+            }
+        }
+
+        // Verificar si hay un equipo ganador
+        if (equipoGanador) {
+            // Reiniciar valores de las columnas a 0 en todas las filas
+            int columna_a_seleccionada_4 = 4;
+            int columna_a_seleccionada_5 = 5;
+            int columna_a_seleccionada_6 = 6;
+            int columna_a_seleccionada_7 = 7;
+
+            for (int i = 0; i < filas; i++) {
+                modelo.setValueAt(0, i, columna_a_seleccionada_4);
+                modelo.setValueAt(0, i, columna_a_seleccionada_5);
+                modelo.setValueAt(0, i, columna_a_seleccionada_6);
+                modelo.setValueAt(0, i, columna_a_seleccionada_7);
+            }
+
+            // Eliminar la fila número 5
+            if (filaEquipoGanador < 5) {
+                modelo.removeRow(5);
+                if (juego == 1) {
+                    juego = 0;
+                    Registrar.setEnabled(true);
+                    propietario.setText("");
+                    nombredelequipo.setText("");
+                    sede.setText("");
+
+                }
+            } else {
+                modelo.removeRow(filaEquipoGanador);
+            }
+
+            JOptionPane.showMessageDialog(this, "¡Hemos encontrado un ganador!");
+        } else {
+            // Verificar otras condiciones después de revisar todas las filas
+
+            if (nombredelequipo.getText().isEmpty() || sede.getText().isEmpty() || propietario.getText().isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Debe registrarse primero");
+            } else {
+                JOptionPane.showMessageDialog(this, "Ningún equipo ha ganado aún");
+
+                // Puedes agregar más lógica aquí si es necesario
+            }
+        }
+
+    }//GEN-LAST:event_ReiniciarActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         int fila =tabla.getSelectedRow();
@@ -660,12 +647,19 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
     private void recargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recargarActionPerformed
         // TODO add your handling code here:
         if (valor.getText().isEmpty()){
-          JOptionPane.showMessageDialog(rootPane, "Por favor llene el valor a recargar");
-      } else{
-          int entero = Integer.parseInt(valor.getText());
-          sumarValorDeseado(entero);
-      }
+            JOptionPane.showMessageDialog(rootPane, "Por favor llene el valor a recargar");
+        } else{
+            int entero = Integer.parseInt(valor.getText());
+            sumarValorDeseado(entero);
+        }
     }//GEN-LAST:event_recargarActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Ligas atrs = new Ligas();
+        atrs.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 private void sumarPartidoJugado() {
     
     
