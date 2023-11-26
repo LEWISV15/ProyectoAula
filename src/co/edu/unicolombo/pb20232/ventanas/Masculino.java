@@ -182,7 +182,6 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
         jPanel1.add(nombredelequipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 224, 20));
 
         Reiniciar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Reiniciar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/Imagenes/basura (1).png"))); // NOI18N
         Reiniciar.setText("Reiniciar");
         Reiniciar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(0, 153, 255), null, null));
         Reiniciar.addActionListener(new java.awt.event.ActionListener() {
@@ -315,7 +314,6 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
         jPanel1.add(txtcolumna, new org.netbeans.lib.awtextra.AbsoluteConstraints(1246, 154, 172, -1));
 
         Registrar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Registrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/Imagenes/verificar (3).png"))); // NOI18N
         Registrar.setText("Registrar");
         Registrar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(0, 153, 255), null, null));
         Registrar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -328,7 +326,7 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
                 RegistrarActionPerformed(evt);
             }
         });
-        jPanel1.add(Registrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 117, 49));
+        jPanel1.add(Registrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 359, 110, 40));
         jPanel1.add(txtdatonuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1042, 246, 316, -1));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -339,7 +337,9 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
         saldo.setText("0.00");
         jPanel1.add(saldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(94, 21, 30, -1));
 
+        premio.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
         premio.setText("Reclamar premio");
+        premio.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         premio.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 premioMouseClicked(evt);
@@ -393,7 +393,7 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
         jButton1.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/atras (1).png"))); // NOI18N
         jButton1.setText("Atras");
-        jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 51, 51), new java.awt.Color(255, 102, 0)));
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
