@@ -163,6 +163,9 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
         premio = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        valor = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -363,6 +366,18 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
             }
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 450, -1, -1));
+
+        jButton3.setText("Recargar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 170, 40));
+        jPanel1.add(valor, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 180, -1));
+
+        jLabel13.setText("Ingrese el valor a recargar");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -596,6 +611,15 @@ private void resetearColumnas(DefaultTableModel modelo, int columna) {
         atrs.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       if (valor.getText().isEmpty()){
+          JOptionPane.showMessageDialog(rootPane, "Por favor llene el valor a recargar");
+      } else{
+          int entero = Integer.parseInt(valor.getText());
+          sumarValorDeseado(entero);
+      }
+    }//GEN-LAST:event_jButton3ActionPerformed
 private void sumarPartidoJugado() {
     
     
@@ -920,10 +944,12 @@ private void sumarPartidoJugado2() {
     private javax.swing.JButton Reiniciar;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -944,5 +970,6 @@ private void sumarPartidoJugado2() {
     private javax.swing.JTextField txtcolumna;
     private javax.swing.JTextField txtdatonuevo;
     private javax.swing.JTextField txtfila;
+    private javax.swing.JTextField valor;
     // End of variables declaration//GEN-END:variables
 }
